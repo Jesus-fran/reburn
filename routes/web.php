@@ -17,13 +17,16 @@ use App\Http\Controllers\RegisterController;
 
 /* Route::get('/register', [RegisterController::class, 'show']);
 Route::post('/action-register', [RegisterController::class, 'register']); */
-
+// Route::get('/', function(){
+//     return view('home.index');
+// });
 Route::group(['namespace' => 'App\Http\Controllers'], function()
 {   
     /**
      * Home Routes
      */
-    Route::get('/home', 'HomeController@index')->name('home.index');
+    
+    Route::get('/', 'HomeController@index')->name('home.index');
 
     Route::group(['middleware' => ['guest']], function() {
         /**
@@ -31,7 +34,12 @@ Route::group(['namespace' => 'App\Http\Controllers'], function()
          */
         Route::get('/register', 'RegisterController@show')->name('register.show');
         Route::post('/register', 'RegisterController@register')->name('register.perform');
-
+        Route::get('/contacto', function(){
+            return view('home.contacto');
+        })->name('contacto');
+        Route::get('/desarrolladores', function(){
+            return view('home.desarrolladores');
+        })->name('desarrolladores');
         /**
          * Login Routes
          */

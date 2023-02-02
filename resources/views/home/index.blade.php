@@ -1,16 +1,570 @@
 @extends('layouts.app-master')
 
 @section('content')
-    <div class="bg-light p-5 rounded">
-        @auth
-        <h1>Dashboard</h1>
-        <p class="lead">Only authenticated users can access this section.</p>
-        <a class="btn btn-lg btn-primary" href="https://codeanddeploy.com" role="button">View more tutorials here &raquo;</a>
-        @endauth
+    <!DOCTYPE html>
+    <html lang="es">
 
-        @guest
-        <h1>Homepage</h1>
-        <p class="lead">Your viewing the home page. Please login to view the restricted data.</p>
-        @endguest
-    </div>
+    <head>
+
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link
+            href="https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap"
+            rel="stylesheet">
+        <link rel="icon" type=".ico" href="assets/images/favicon.ico" />
+        <title>Reburn - Believe In You</title>
+        <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="assets/css/font-awesome.css">
+        <link rel="stylesheet" href="{{ asset('assets/bootstrap/reburn.min.css') }}">
+
+        <!-- Google tag (gtag.js) -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-X49SJESNXX"></script>
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7784149573243041"
+            crossorigin="anonymous"></script>
+
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7784149573243041"
+            crossorigin="anonymous"></script>
+        <!-- anuncios1 -->
+        <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-7784149573243041" data-ad-slot="6346583827"
+            data-ad-format="auto" data-full-width-responsive="true"></ins>
+        <script>
+            (adsbygoogle = window.adsbygoogle || []).push({});
+        </script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+
+            function gtag() {
+                dataLayer.push(arguments);
+            }
+            gtag('js', new Date());
+
+            gtag('config', 'G-X49SJESNXX');
+        </script>
+    </head>
+
+    <body>
+
+        <!-- Preloader Start -->
+        <div id="js-preloader" class="js-preloader">
+            <div class="preloader-inner">
+                <span class="dot"></span>
+                <div class="dots">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+        <!-- Preloader End -->
+
+
+        <div class="main-banner" id="top">
+            <div class="img-overlay header-text">
+                <div class="caption">
+                    <h6>La vida comienza al final de tu zona de confort</h6>
+                    <h2>ÚNETE A LA GRAN FAMILIA <em>REBURN GYM</em></h2>
+                    <div class="main-button scroll-to-section">
+                        <a href="https://wa.me/+529842056758?text=Hola!, Necesito más información, sobre costos y demás"
+                            target="_blank">Hazte miembro</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <section class="section" id="features">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 offset-lg-3">
+                        <div class="section-heading">
+                            <h2>Nuestros<em> Servicios</em></h2>
+                            <p>Reburn cuenta con las mejores herramientas para mejorar y cumplir tus sueños que tienes sobre
+                                tu físico.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <ul class="features-items">
+                            <li class="feature-item">
+                                <div class="left-icon">
+                                    <img src="assets/images/features-first-icon1.png" alt="program">
+                                </div>
+                                <div class="right-content">
+                                    <h4>Aptitud Básica</h4>
+                                    <p>Herramientas en buena calidad, con sus respectivos cuidados, que esperas para empezar
+                                        con tu rutina.</p>
+                                    <a href="https://wa.me/+529842056758?text=Hola! Necesito más información"
+                                        class="text-button" target="_blank">Más información</a>
+                                </div>
+                            </li>
+                            <li class="feature-item">
+                                <div class="left-icon">
+                                    <img src="assets/images/features-first-icon2.png" alt="program">
+                                </div>
+                                <div class="right-content">
+                                    <h4>Nuevo entrenamiento de gimnasio</h4>
+                                    <p>Contamos con nuevos entrenamiento que en estos momentos causa furor en los centros
+                                        deportivos, una rutina Hiit que se presenta como la forma más fácil, asequible y
+                                        eficaz de ponerse en forma, perder peso y definir la silueta. Todo en 45 minutos y
+                                        sin sufrir.</p>
+                                    <a href="https://wa.me/+529842056758?text=Hola!, Necesito más información"
+                                        class="text-button" target="_blank">Más información</a>
+                                </div>
+                            </li>
+                            <li class="feature-item">
+                                <div class="left-icon">
+                                    <img src="assets/images/features-first-icon3.png" alt="program">
+                                </div>
+                                <div class="right-content">
+                                    <h4>Curso Muscular Avanzado</h4>
+                                    <p>Tenemos el orgullo de presentar un seminario avanzado de reequilibración
+                                        tónico-postural, en base al concepto de cadenas musculares GDS, dirigido a
+                                        entrenadores.</p>
+                                    <a href="https://wa.me/+529842056758?text=Hola!, Necesito más información"
+                                        class="text-button" target="_blank">Más información</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-6">
+                        <ul class="features-items">
+                            <li class="feature-item">
+                                <div class="left-icon">
+                                    <img src="assets/images/features-first-icon4.png" alt="program">
+                                </div>
+                                <div class="right-content">
+                                    <h4>Curso musculación estética</h4>
+                                    <p> El objetivo es el desarrollo muscular a nivel hipertrófico, de definición muscular,
+                                        simetría corporal y la máxima reducción posible de grasa corporal.</p>
+                                    <a href="https://wa.me/+59842056758?text=Hola!, Necesito más información"
+                                        class="text-button" target="_blank">Más información</a>
+                                </div>
+                            </li>
+                            <li class="feature-item">
+                                <div class="left-icon">
+                                    <img src="assets/images/features-first-icon5.png" alt="program">
+                                </div>
+                                <div class="right-content">
+                                    <h4>Entrenamiento de yoga</h4>
+                                    <p>Contamos con especialistas que te conectan con el cuerpo, la respiración y la mente.
+                                        Esta práctica utiliza posturas físicas, ejercicios de respiración y meditación para
+                                        mejorar la salud general. </p>
+                                    <a href="https://wa.me/+52529842056758?text=Hola!, Necesito más información"
+                                        class="text-button" target="_blank">Más información</a>
+                                </div>
+                            </li>
+                            <li class="feature-item">
+                                <div class="left-icon">
+                                    <img src="assets/images/features-first-icon6.png" alt="program">
+                                </div>
+                                <div class="right-content">
+                                    <h4>Curso de musculación</h4>
+                                    <p>Contamos con un instructor de fitness que se encarga de dirigir e instruir a las
+                                        personas sobre los diferentes ejercicios y actividades de acondicionamiento físico.
+                                        Sus responsabilidades y funciones pueden variar de acuerdo al área en el cual se
+                                        haya especializado</p>
+                                    <a href="https://wa.me/+529842056758?text=Hola!, Necesito más información"
+                                        class="text-button" target="_blank">Más información</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" id="call-to-action">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-10 offset-lg-1">
+                        <div class="cta-content">
+                            <h2>¡NO LO<em> PIENSES</em> EMPIEZA<em> HOY!</em>!</h2>
+                            <p>Busca la actividad que va contigo.</p>
+                            <div class="main-button scroll-to-section">
+                                <a href="https://wa.me/+529842056758?text=Hola!%20deceo%20ser%20miembro%20por%20favor."
+                                    target="_blank">Hazte miembro</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" id="our-halls">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 offset-lg-3">
+                        <div class="section-heading">
+                            <h2>Nuestro <em>Espacio</em></h2>
+                            <p>No te preocupes si no sabes que espacio ocupar o por donde empezar, nuestro espacio se adapta
+                                a usted.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row" id="tabs">
+                    <div class="col-lg-4 mb-5">
+                        <ul>
+                            <li>
+                                <a href='#tabs-1'><img src="assets/images/tabs-first-icon.png" alt="classes">Equipo
+                                    adecuado</a>
+                            </li>
+                            <li>
+                                <a href='#tabs-2'><img src="assets/images/tabs-first-icon.png" alt="classes">Espacios
+                                    seguros</a>
+                            </li>
+                            <li>
+                                <a href='#tabs-3'><img src="assets/images/tabs-first-icon.png" alt="classes">Ambiente
+                                    agradable</a>
+                            </li>
+                            <li>
+                                <a href='#tabs-4'><img src="assets/images/tabs-first-icon.png" alt="classes">Personal
+                                    capacitado</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-8">
+                        <section class='tabs-content'>
+                            <article id='tabs-1'>
+                                <img src="assets/images/halls/halls-1.jpg" alt="First hall">
+                                <h4>Primera sala Aptitud básica</h4>
+                                <p>Contamos con una sala aptamente libre con sus herramientas para principiantes en el mundo
+                                    del Gym</p>
+                                <div class="main-button">
+                                    <a href="#schedule">Ver Horario</a>
+                                </div>
+                            </article>
+                            <article id='tabs-2'>
+                                <img src="assets/images/halls/halls-2.jpg" alt="Second hall">
+                                <h4>Segundo salón Curso Muscular Avanzado</h4>
+                                <p>Segunda sala para musculos avanzados, esta sla cuenta con seguridad, herramientas para
+                                    dicho ejercico y mucho mas.</p>
+                                <div class="main-button">
+                                    <a href="#schedule">Ver Horario</a>
+                                </div>
+                            </article>
+                            <article id='tabs-3'>
+                                <img src="assets/images/halls/halls-3.jpg" alt="Third hall">
+                                <h4>Entrenamiento de yoga</h4>
+                                <p>Salon especialmente para conectar el cuerpo con los sentidos y ir mas a profundo de
+                                    meditacion, espcio limpio y silencio.</p>
+                                <div class="main-button">
+                                    <a href="#schedule">Ver Horario</a>
+                                </div>
+                            </article>
+                            <article id='tabs-4'>
+                                <img src="assets/images/halls/halls-4.jpg" alt="Fourth hall">
+                                <h4>Curso Musculación Estética</h4>
+                                <p>Este salon es para medir tu masa uscular y hacer estudios sobre tus resultados que se
+                                    llevana travez de los ejrcicios y cursos.</p>
+                                <div class="main-button">
+                                    <a href="#schedule">Ver Horario</a>
+                                </div>
+                            </article>
+                        </section>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" id="schedule">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 offset-lg-3">
+                        <div class="section-heading dark-bg">
+                            <h2>HORARIO DE CLASES <em> CLASES</em></h2>
+                            <p>Estas son las clases que se tiene programadas durante los dias de las semana con sus
+                                respectivos horarios.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="filters">
+                            <ul class="schedule-filter">
+                                <li class="active" data-tsfilter="monday">Lunes</li>
+                                <li data-tsfilter="tuesday">Martes</li>
+                                <li data-tsfilter="wednesday">Miercoles</li>
+                                <li data-tsfilter="thursday">Jueves</li>
+                                <li data-tsfilter="friday">Viernes</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-10 offset-lg-1">
+                        <div class="schedule-table filtering">
+                            <table>
+                                <tbody>
+                                    <tr>
+                                        <td class="day-time">Clase De Gimnasia</td>
+                                        <td class="monday ts-item show" data-tsmeta="monday">10:00AM - 11:30AM</td>
+                                        <td class="tuesday ts-item" data-tsmeta="tuesday">2:00PM - 3:30PM</td>
+                                        <td>William G. Stewart</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="day-time">Entrenamiento Muscular</td>
+                                        <td class="friday ts-item" data-tsmeta="friday">10:00AM - 11:30AM</td>
+                                        <td class="thursday friday ts-item" data-tsmeta="thursday">
+                                            2:00PM - 3:30PM</td>
+                                        <td>Paul D. Newman</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="day-time">Culturismo</td>
+                                        <td class="tuesday ts-item" data-tsmeta="tuesday">10:00AM - 11:30AM</td>
+                                        <td class="monday ts-item show" data-tsmeta="monday">2:00PM - 3:30PM</td>
+                                        <td>Boyd C. Harris</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="day-time">Clase De Entrenamiento De Yoga</td>
+                                        <td class="wednesday ts-item" data-tsmeta="wednesday">10:00AM - 11:30AM</td>
+                                        <td class="friday ts-item" data-tsmeta="friday">2:00PM - 3:30PM</td>
+                                        <td>Hector T. Daigle</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="day-time">Formación Avanzada</td>
+                                        <td class="thursday ts-item" data-tsmeta="thursday">10:00AM - 11:30AM</td>
+                                        <td class="wednesday ts-item" data-tsmeta="wednesday">2:00PM - 3:30PM</td>
+                                        <td>Bret D. Bowers</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section mb-5" id="trainers">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 offset-lg-3">
+                        <div class="section-heading">
+                            <h2>Nuestros <em> entrenadores</em></h2>
+                            <p>Los mejores para los mejores. Porque brindar un servicio de calidad, es nuestro objetivo,
+                                aqui te presentamos los perfiles de los mejores profesionales en el área que estarán
+                                disponibles para ti!</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-4">
+                        <div class="trainer-item">
+                            <div class="image-thumb">
+                                <img src="assets/images/trainer.jpg" alt="trainers">
+                            </div>
+                            <div class="down-content">
+                                <span>Coach</span>
+                                <h4>Josue Bret D.</h4>
+                                <p>Posee las siguiente caulidades y habilidades: Conocimientos de nutrición deportiva y vida
+                                    sana, adaptación a las necesidades de cada persona, entrenamientos divertidos y
+                                    dinámicos, prevención de lesiones deportivas, capacidad de escucha, comunicación
+                                    efectiva, todo lo previo exclusivo pra mantener un ambiente adecuado para ti.</p>
+                                <ul class="social-icons">
+                                    <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="trainer-item">
+                            <div class="image-thumb">
+                                <img src="assets/images/trainer.jpg" alt="trainers">
+                            </div>
+                            <div class="down-content">
+                                <span>Coach</span>
+                                <h4>Luis Alejandro Villamil</h4>
+                                <p>Además de entrenamiento personal, cuenta con servicios de nutrición, fisioterapia y
+                                    psicología. Su método de trabajo se basa en tres pilares: análisis del estilo de vida,
+                                    evaluación y valoración funcional, y control y monitorización del entrenamiento. Tratan
+                                    el dolor para reducir la fatiga y mejorar la condición física. También la salud general
+                                    y la rehabilitación de lesiones.</p>
+                                <ul class="social-icons">
+                                    <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="trainer-item">
+                            <div class="image-thumb">
+                                <img src="assets/images/trainer.jpg" alt="trainers">
+                            </div>
+                            <div class="down-content">
+                                <span>Coach</span>
+                                <h4>Humberto Reyes</h4>
+                                <p>Con más de 25 años de experiencia en el mundo del fitness. Es uno de los más completos y
+                                    versátiles, permitiendote evolucionar de manera eficiente, superando tus expectativas..
+                                </p>
+                                <ul class="social-icons">
+                                    <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="section-testimonial" id="testimonials">
+            <div class="col-lg-6 offset-lg-3">
+                <div class="section-heading">
+                    <h2><em>Lo que opinan de nosotros</em></h2>
+                    <p>Porque no brindamos solo un espacio, brindamos experiencias, momentos, sueños, calidad de vida, por
+                        ello no simporta lo que nuestra familia expresa de nosotros.</p>
+                </div>
+            </div>
+            <div class="karusetulava">
+                <div>
+                    <figure class="testimonial">
+                        <blockquote>Desde que llegué a REBURN, me hicieron sentir como una más en esa gran familia que han
+                            creado en sus instalaciones, siempre pendientes de estar a la última en las actividades, pero
+                            sin duda lo mejor de este gimnasio es el equipo humano que lo forma estando pendientes de todos
+                            y cada uno de aquellos que visiten sus instalaciones
+                        </blockquote>
+                        <img src="assets/images/testimonials/testimonial-avatar-1.jpg" alt="testimonial">
+                        <div class="peopl">
+                            <h3>Alicia G.</h3>
+                            <p class="indentity">Fitness Jr.</p>
+                        </div>
+                    </figure>
+                </div>
+                <div>
+                    <figure class="testimonial">
+                        <blockquote>Unas instalaciones de lo mas completas, gran variedad de clases y actividades. Tiene
+                            horaios y espacio muy flexibles, lo cual te permite entrenar en casi cualquier momento. Te
+                            asesoran en nutrición, te planifican entrenamientos completos y te ayudan a conseguir tus
+                            objetivos. Además disponen de sauna!
+                        </blockquote>
+                        <img src="assets/images/testimonials/testimonial-avatar-2.jpg" alt="testimonial">
+                        <div class="peopl">
+                            <h3>Daniel A.C.</h3>
+                            <p class="indentity">Warrior Star.</p>
+                        </div>
+                    </figure>
+                </div>
+                <div>
+                    <figure class="testimonial">
+                        <blockquote>Llevo dos años entrenando en el gimnasio REBURN durante mis vacaciones y estoy
+                            encantado. Tienen todo lo que necesitas para entrenar (sin florituras innecesarias) y un montón
+                            de clases colectivas. Y lo mejor de todo es el trato y el buen asesoramiento que te dan desde el
+                            minuto 1. Se nota la experiencia de muchos años.
+                        </blockquote>
+                        <img src="assets/images/testimonials/testimonial-avatar-3.jpg" alt="testimonial">
+                        <div class="peopl">
+                            <h3>Sebastian C</h3>
+                            <p class="indentity">Advanced Ninja.</p>
+                        </div>
+                    </figure>
+                </div>
+                <div>
+                    <figure class="testimonial">
+                        <blockquote>Es raro, hoy en día, encontrar un gimnasio cuyos monitores estén pendientes de ti seas
+                            cliente habitual o solo de paso. Que te pongan tus tablas preguntándote y entendiendo tus
+                            problemas traumatologicos y que sepan recomendarte una dieta o aconsejarte sobre nutrición. Las
+                            instalaciones tienen variedad de maquinas y bancos para que no tengas que estar esperando para
+                            hacer tus ejercicios.
+                        </blockquote>
+                        <img src="assets/images/testimonials/testimonial-avatar-4.jpg" alt="testimonial">
+                        <div class="peopl">
+                            <h3>Erick J.P.</h3>
+                            <p class="indentity">Diamond Warrior.</p>
+                        </div>
+                    </figure>
+                </div>
+            </div>
+        </div>
+
+        <div class="pricing pricing--yama pb-5 row" id="price">
+            <div class="col-lg-12">
+                <div class="section-heading">
+                    <h2>Precios</h2>
+                    <p>Porque nos importa tu salud y mejorar tu estilo de vida, nos adecuados a tus tiempos y espacios,
+                        brindando a todos la posibilidad de formar patrte de la familia REBURN, con los siguientes planes:
+                    </p>
+                </div>
+            </div>
+            <div class="pricing__item col-lg-3 col-md-6 col-sm-12">
+                <h3 class="pricing__title">Básico</h3>
+                <div class="pricing__price"><span class="pricing__currency">$</span>199<span
+                        class="pricing__period">/Mensual</span></div>
+                <ul class="pricing__feature-list">
+                    <li class="pricing__feature">Acceso a todo el espacio y equipo.</li>
+                    <li class="pricing__feature">Acceso a regaderas.</li>
+                    <li class="pricing__feature">Acceso a locker, solo mientras este en el Gimnasio.</li>
+                    <li class="pricing__feature">Turno Matutino o Vespertino.</li>
+                </ul>
+                <a href="https://wa.me/+529842056758?text=Hola!, Me interesa el plan Básico" class="pricing__action"
+                    target="_blank">Elegir este plan</a>
+            </div>
+            <div class="pricing__item col-lg-3 col-md-6 col-sm-12">
+                <h3 class="pricing__title">Estándar</h3>
+                <div class="pricing__price"><span class="pricing__currency">$</span>299<span
+                        class="pricing__period">/Mensual</span></div>
+                <ul class="pricing__feature-list">
+                    <li class="pricing__feature">Acceso a todo el espacio y equipo.</li>
+                    <li class="pricing__feature">Acceso 24/7.</li>
+                    <li class="pricing__feature">Acceso a regaderas y espacios de recreación.</li>
+                    <li class="pricing__feature">Acceso a locker, solo mientras este en el Gimnasio.</li>
+                    <li class="pricing__feature">Atención de un entrenador general.</li>
+
+                </ul>
+                <a href="https://wa.me/+529842056758?text=Hola!, Me interesa el plan Estándar" class="pricing__action"
+                    target="_blank">Elegir este plan</a>
+            </div>
+            <div class="pricing__item col-lg-3 col-md-6 col-sm-12">
+                <h3 class="pricing__title">Popular</h3>
+                <div class="pricing__price"><span class="pricing__currency">$</span>349<span
+                        class="pricing__period">/Mensual</span></div>
+                <ul class="pricing__feature-list">
+                    <li class="pricing__feature">Acceso a todo el espacio y equipo.</li>
+                    <li class="pricing__feature">Acceso 24/7.</li>
+                    <li class="pricing__feature">Acceso a regaderas y espacios de recreación.</li>
+                    <li class="pricing__feature">Acceso a locker único.</li>
+                    <li class="pricing__feature">Atención de un entrenador personalizado.</li>
+                </ul>
+                <a href="https://wa.me/+529842056758?text=Hola!, Me interesa el plan Popular" class="pricing__action"
+                    target="_blank">Elegir este plan</a>
+            </div>
+            <div class="pricing__item col-lg-3 col-md-6 col-sm-12">
+                <h3 class="pricing__title">Premium</h3>
+                <div class="pricing__price"><span class="pricing__currency">$</span>499<span
+                        class="pricing__period">/Mensual</span>
+                </div>
+                <ul class="pricing__feature-list">
+                    <li class="pricing__feature">Acceso a todo el espacio y equipo.</li>
+                    <li class="pricing__feature">Acceso 24/7.</li>
+                    <li class="pricing__feature">Acceso a regaderas y espacios de recreación.</li>
+                    <li class="pricing__feature">Acceso a locker único.</li>
+                    <li class="pricing__feature">Atención de un entrenador personalizado.</li>
+                    <li class="pricing__feature">Atención de un nutriólogo una vez por semana.</li>
+                </ul>
+                <a href="https://wa.me/+529842056758?text=Hola!, Me interesa el plan Premium" class="pricing__action"
+                    target="_blank">Elegir este plan</a>
+            </div>
+        </div>
+
+
+        
+
+
+    </body>
+
+
+    <script src="assets/js/jquery-2.1.0.min.js"></script>
+    <script src="assets/js/popper.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/scrollreveal.min.js"></script>
+    <script src="assets/js/waypoints.min.js"></script>
+    <script src="assets/js/jquery.counterup.min.js"></script>
+    <script src="assets/js/imgfix.min.js"></script>
+    <script src="assets/js/mixitup.js"></script>
+    <script src="assets/js/accordions.js"></script>
+    <script src="assets/js/custom.js"></script>
+    <script src="assets/js/contactform.js"></script>
+    <script src='https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js'></script>
+
+    </html>
 @endsection
