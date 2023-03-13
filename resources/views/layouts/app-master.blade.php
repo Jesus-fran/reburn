@@ -3,10 +3,6 @@
 
 <head>
 
-    {{-- <meta charset="utf-8">
-    <meta name="description" content="">
-    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
-    <meta name="generator" content="Hugo 0.87.0"> --}}
     <title>Reburn</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -74,7 +70,6 @@
         @yield('content')
     </main>
 
-    <script src="{!! url('assets/bootstrap/js/bootstrap.bundle.min.js') !!}"></script>
     <footer>
         <div class="dsaf">
             <div class="row">
@@ -97,33 +92,6 @@
                                     src="assets/images/social/instagram.png" alt="instagram"></a></li>
                     </ul>
 
-                    <!-- <div class="media">
-                        <a href="#" class="pull-left">
-                             <li>Item1 </li>
-                        </a>
-                    </div><p></p>
-                    <div class="media">
-                        <a href="#" class="pull-left">
-                             <li>Item1 </li>
-                        </a>
-                    </div><p></p>
-                      <div class="media">
-                        <a href="#" class="pull-left">
-                             <li>Item1 </li>
-                        </a>
-                    </div>
-                </div>
-                <div class="col-lg-4">
-                    <h3>mapa de sitio</h3>
-                     <ul>
-                         <li>Item1 </li><p></p>
-                          <li>Item1 </li><p></p>
-                           <li>Item1 </li><p></p>
-                            <li>Item1 </li><p></p>
-                     </ul>
-                </div>  -->
-
-
                 </div>
             </div>
             <div class="copyright text-center text-white">
@@ -135,5 +103,6 @@
     </footer>
 
 </body>
+<script src="{!! url('assets/bootstrap/js/bootstrap.bundle.min.js') !!}"></script>
 
 </html>

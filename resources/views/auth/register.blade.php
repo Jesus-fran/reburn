@@ -1,7 +1,7 @@
 @extends('layouts.auth-master')
 
 @section('content')
-    <form method="post" action="{{ route('register.perform') }}" class="container w-25">
+    <form method="post" action="{{ route('registrar-usuario') }}" class="container w-25">
 
         <input type="hidden" name="_token" value="{{ csrf_token() }}" />
         <img class="img-fluid mt-4" src="{{ asset('assets/images/features-first-icon3.png') }}" alt="" width="72" height="57">

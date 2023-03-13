@@ -19,6 +19,6 @@ class LogoutController extends Controller
         
         Auth::logout();
 
-        return redirect()->route('home.index');
+        return redirect()->route('/');
     }
 }

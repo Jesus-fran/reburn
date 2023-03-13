@@ -8,7 +8,7 @@
             </a>
 
             <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
-                <li><a href="{{ route('home.index') }}" class="nav-link px-2 text-secondary">Reburn</a></li>
+                <li><a href="{{ route('/') }}" class="nav-link px-2 text-secondary">Reburn</a></li>
                 <li><a href="#schedule" class="nav-link px-2 text-white">Horarios</a></li>
                 <li><a href="#trainers" class="nav-link px-2 text-white">Entrenadores</a></li>
                 <li><a href="{{ route('contacto') }}" class="nav-link px-2 text-white">Contacto</a></li>
@@ -23,14 +23,14 @@
             @auth
                 {{ auth()->user()->name }}
                 <div class="text-end px-2">
-                    <a href="{{ route('logout.perform') }}" class="btn btn-outline-light me-2">Logout</a>
+                     <a href="{{ route('cerrar-sesion') }}" class="btn btn-outline-light me-2">Logout</a>
                 </div>
             @endauth
 
             @guest
                 <div class="text-end">
-                    <a href="{{ route('login.perform') }}" class="btn btn-outline-light me-2">Login</a>
-                    <a href="{{ route('register.perform') }}" class="btn btn-primary">Registrarse</a>
+                    <a href="{{ route('login') }}" class="btn btn-outline-light me-2">Login</a>
+                    <a href="{{ route('registrar') }}" class="btn btn-primary">Registrarse</a>
                 </div>
             @endguest
         </div>
