@@ -28,7 +28,6 @@ class LoginController extends Controller
         endif;
         $user = Auth::getProvider()->retrieveByCredentials($credentials);
         
-
         Auth::login($user);
 
         return $this->authenticated($request, $user);
@@ -36,6 +35,10 @@ class LoginController extends Controller
 
     protected function authenticated(Request $request, $user) 
     {
+        if (auth()->user()->name == 'admin') {
+            return redirect()->route('administracion');   
+        }
+
         return redirect()->route('/');
     }
 }

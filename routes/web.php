@@ -4,6 +4,7 @@ use App\Http\Controllers\LoginController;
 use App\Http\Controllers\LogoutController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\RegisterController;
+use App\Http\Middleware\Admin;
 
 Route::get('/', function(){
     return view('index');
@@ -40,7 +41,7 @@ Route::get('registrar', function(){
 
 Route::get('administracion', function(){
     return view('admin.panelprincipal');
-})->name('administracion');
+})->name('administracion')->middleware(Admin::class);
 
 Route::get('logs', [\Rap2hpoutre\LaravelLogViewer\LogViewerController::class, 'index']);
 

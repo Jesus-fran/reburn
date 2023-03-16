@@ -39,7 +39,7 @@
 
 <div class="container-fluid bg-dark contenedor_nav" id="contenedor_nav">
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark" id="barra_nav">
-        <a class="navbar-brand" href="{{ route('/') }}"><i class="bi bi-code"></i>Reburn</a>
+        <a class="navbar-brand" href="{{ route('/') }}">Reburn</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#opciones"
             aria-controls="opciones" aria-expanded="false" aria-label="Toggle navigation" onclick="show_menu()">
             <span class="navbar-toggler-icon"></span>
@@ -56,8 +56,7 @@
                                 class="nav-link px-2 text-white">Entrenadores</a></div>
                         {{-- <div class="col-md-auto offset-md-1" id="opcion"><a class="nav-link" href="{{ url('/donar', []) }}">Donar</a></div> --}}
                         <div class="col-md-auto offset-md-1" id="opcion">
-                            <a href="{{ route('precios') }}"
-                                class="nav-link px-2 text-white">Precios</a>
+                            <a href="{{ route('precios') }}" class="nav-link px-2 text-white">Precios</a>
                         </div>
                         <div class="col-md-auto offset-md-1" id="opcion"><a href="{{ route('contacto') }}"
                                 class="nav-link px-2 text-white">Contacto</a></div>
@@ -66,8 +65,12 @@
                                 class="nav-link px-2 text-white">Desarrolladores</a>
                         </div> --}}
                         @auth
-                            {{ auth()->user()->name }}
-                            <div class="text-end px-2">
+
+                            <div class="col-md-auto offset-md-1 text-light">
+                                <a href="{{ route('contacto') }}" class="nav-link px-2 text-white"> <i
+                                        class="bi bi-person-circle p-2"></i>{{ auth()->user()->name }}</a>
+                            </div>
+                            <div class="col-md-auto offset-md-1" id="opcion">
                                 <a href="{{ route('cerrar-sesion') }}" class="btn btn-outline-light me-2">Logout</a>
                             </div>
                         @endauth
