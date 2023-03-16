@@ -37,6 +37,13 @@ Route::get('registrar', function(){
     return view('auth.register');
 })->name('registrar');
 
+
+Route::get('administracion', function(){
+    return view('admin.panelprincipal');
+})->name('administracion');
+
+Route::get('logs', [\Rap2hpoutre\LaravelLogViewer\LogViewerController::class, 'index']);
+
 Route::post('iniciar-sesion', [LoginController::class, 'login'])->name('iniciar-sesion');
 Route::get('cerrar-sesion', [LogoutController::class, 'perform'])->name('cerrar-sesion');
 Route::post('registrar-usuario', [RegisterController::class, 'register'])->name('registrar-usuario');
