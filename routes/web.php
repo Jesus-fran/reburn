@@ -6,15 +6,27 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\RegisterController;
 
 Route::get('/', function(){
-    return view('home.index');
+    return view('index');
 })->name('/');
 
 Route::get('contacto', function(){
-    return view('home.contacto');
+    return view('contacto');
 })->name('contacto');
 
+Route::get('entrenadores', function(){
+    return view('entrenadores');
+})->name('entrenadores');
+
+Route::get('horarios', function(){
+    return view('horarios');
+})->name('horarios');
+
+Route::get('precios', function(){
+    return view('precios');
+})->name('precios');
+
 Route::get('desarrolladores', function(){
-    return view('home.desarrolladores');
+    return view('desarrolladores');
 })->name('desarrolladores');
 
 Route::get('login', function(){

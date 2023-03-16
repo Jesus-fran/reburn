@@ -1514,6 +1514,7 @@ footer {
   background: #222;
   color: #aaa;
   padding-top: 10px;
+  margin-top: 15vh;
 }
 
 .footer-logo {
@@ -1634,3 +1635,11 @@ footer .copyright span {
     margin-left: 10px !important;;
 
     }
+
+.text-justify{
+  text-align: justify;
+}
+
+.row-footer{
+  height: 30vh;
+}

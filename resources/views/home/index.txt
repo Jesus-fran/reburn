@@ -1,48 +1,8 @@
 @extends('layouts.app-master')
 
 @section('content')
-    <!DOCTYPE html>
-    <html lang="es">
 
-    <head>
 
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        <link
-            href="https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap"
-            rel="stylesheet">
-        <link rel="icon" type=".ico" href="assets/images/favicon.ico" />
-        <title>Reburn - Believe In You</title>
-        <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
-        <link rel="stylesheet" type="text/css" href="assets/css/font-awesome.css">
-        <link rel="stylesheet" href="{{ asset('assets/bootstrap/reburn.min.css') }}">
-
-        <!-- Google tag (gtag.js) -->
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-X49SJESNXX"></script>
-        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7784149573243041"
-            crossorigin="anonymous"></script>
-
-        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7784149573243041"
-            crossorigin="anonymous"></script>
-        <!-- anuncios1 -->
-        <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-7784149573243041" data-ad-slot="6346583827"
-            data-ad-format="auto" data-full-width-responsive="true"></ins>
-        <script>
-            (adsbygoogle = window.adsbygoogle || []).push({});
-        </script>
-        <script>
-            window.dataLayer = window.dataLayer || [];
-
-            function gtag() {
-                dataLayer.push(arguments);
-            }
-            gtag('js', new Date());
-
-            gtag('config', 'G-X49SJESNXX');
-        </script>
-    </head>
-
-    <body>
 
         <!-- Preloader Start -->
         <div id="js-preloader" class="js-preloader">
@@ -545,14 +505,6 @@
                     target="_blank">Elegir este plan</a>
             </div>
         </div>
-
-
-        
-
-
-    </body>
-
-
     <script src="assets/js/jquery-2.1.0.min.js"></script>
     <script src="assets/js/popper.js"></script>
     <script src="assets/js/bootstrap.min.js"></script>
@@ -565,6 +517,4 @@
     <script src="assets/js/custom.js"></script>
     <script src="assets/js/contactform.js"></script>
     <script src='https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js'></script>
-
-    </html>
 @endsection
