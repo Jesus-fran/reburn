@@ -46,6 +46,8 @@
                         <th scope="col">Hora</th>
                         <th scope="col">Usuario</th>
                         <th scope="col">Dirección IP</th>
+                        <th scope="col">Navegador</th>
+                        <th scope="col">Plataforma</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -57,6 +59,8 @@
                             <td>{{ \Carbon\Carbon::parse($acceso->fechahora)->toTimeString() }}</td>
                             <td>{{ $acceso->user }}</td>
                             <td>{{ $acceso->ip }}</td>
+                            <td>{{ $acceso->browser }}</td>
+                            <td>{{ $acceso->platform }}</td>
                         </tr>
                     @endforeach
 

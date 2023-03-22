@@ -164,7 +164,7 @@ return [
         Illuminate\Validation\ValidationServiceProvider::class,
         Illuminate\View\ViewServiceProvider::class,
         Rap2hpoutre\LaravelLogViewer\LaravelLogViewerServiceProvider::class,
-
+        jenssegers\agent\AgentServiceProvider::class,
         /*
          * Package Service Providers...
          */
@@ -193,6 +193,7 @@ return [
 
     'aliases' => Facade::defaultAliases()->merge([
         // ...
+        'Agent' => jenssegers\agent\Facades\Agent::class,
     ])->toArray(),
 
 ];
