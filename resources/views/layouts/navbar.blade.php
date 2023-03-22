@@ -65,11 +65,17 @@
                                 class="nav-link px-2 text-white">Desarrolladores</a>
                         </div> --}}
                         @auth
-
-                            <div class="col-md-auto offset-md-1 text-light">
-                                <a href="{{ route('contacto') }}" class="nav-link px-2 text-white"> <i
-                                        class="bi bi-person-circle p-2"></i>{{ auth()->user()->username }}</a>
-                            </div>
+                            @if (auth()->user()->username == 'admin')
+                                <div class="col-md-auto offset-md-1 text-light">
+                                    <a href="{{ route('administracion') }}" class="nav-link px-2 text-white"> <i
+                                            class="bi bi-person-circle p-2"></i>{{ auth()->user()->username }}</a>
+                                </div>
+                            @else
+                                <div class="col-md-auto offset-md-1 text-light">
+                                    <a class="nav-link px-2 text-white"> <i
+                                            class="bi bi-person-circle p-2"></i>{{ auth()->user()->username }}</a>
+                                </div>
+                            @endif
                             <div class="col-md-auto offset-md-1" id="opcion">
                                 <a href="{{ route('cerrar-sesion') }}" class="btn btn-outline-light me-2">Logout</a>
                             </div>
