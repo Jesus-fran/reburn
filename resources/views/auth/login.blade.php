@@ -8,7 +8,9 @@
                 width="72" height="57">
         </div>
 
-        <h1 class="h3 mb-3 fw-normal mt-5">Iniciar sesión</h1>
+        <div class="col-12 text-center">
+            <h1 class="h3 mb-3 fw-normal mt-5">Iniciar sesión</h1>
+        </div>
 
         @if (isset($errors) && count($errors) > 0)
             <div class="alert alert-warning" role="alert">
@@ -17,6 +19,13 @@
                         <li>{{ $error }}</li>
                     @endforeach
                 </ul>
+            </div>
+        @endif
+
+
+        @if (isset($registrado))
+            <div class="alert alert-warning text-center" role="alert">
+                <i class="fa fa-check"></i> &nbsp Registrado! <p class="fst-italic">Ya puedes iniciar sesión</p>
             </div>
         @endif
 
@@ -36,11 +45,11 @@
                 </div>
             @endif
         @endif
-        
+
         <div class="form-group form-floating mb-3 mt-4">
             <input type="text" class="form-control" name="username" value="{{ old('username') }}" placeholder="Username"
                 required="required" autofocus>
-            <label for="floatingName">Correo o nombre de usuario</label>
+            <label for="floatingName">Correo electrónico</label>
             @if ($errors->has('username'))
                 <span class="text-danger text-left">{{ $errors->first('username') }}</span>
             @endif

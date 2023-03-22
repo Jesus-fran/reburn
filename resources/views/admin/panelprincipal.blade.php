@@ -24,7 +24,7 @@
                 <img class="card-img-top img-fluid " src="{{ asset('assets/images/img-log2.avif') }}" alt="">
                 <div class="card-body">
                     <div class="col-12 text-center">
-                        <a class="btn btn-primary" role="button" aria-disabled="true">Logs de accesos</a>
+                        <a class="btn btn-primary" href="{{ route('logs-accesos') }}" role="button" aria-disabled="true">Logs de accesos</a>
                     </div>
                 </div>
             </div>
@@ -34,7 +34,7 @@
                 <img class="card-img-top img-fluid " src="{{ asset('assets/images/img-logo3.avif') }}" alt="">
                 <div class="card-body">
                     <div class="col-12 text-center">
-                        <a class="btn btn-primary" role="button" aria-disabled="true">Logs de CRUD</a>
+                        <a class="btn btn-primary" href="{{ route('logs-registros') }}" role="button" aria-disabled="true">Logs de registros</a>
                     </div>
                 </div>
             </div>

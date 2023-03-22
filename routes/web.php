@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\LoginController;
 use App\Http\Controllers\LogoutController;
+use App\Http\Controllers\LogsController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\RegisterController;
 use App\Http\Middleware\Admin;
@@ -43,8 +44,12 @@ Route::get('administracion', function(){
     return view('admin.panelprincipal');
 })->name('administracion')->middleware(Admin::class);
 
-Route::get('logs', [\Rap2hpoutre\LaravelLogViewer\LogViewerController::class, 'index']);
+Route::get('logs', [\Rap2hpoutre\LaravelLogViewer\LogViewerController::class, 'index'])->middleware(Admin::class);
 
 Route::post('iniciar-sesion', [LoginController::class, 'login'])->name('iniciar-sesion');
 Route::get('cerrar-sesion', [LogoutController::class, 'perform'])->name('cerrar-sesion');
 Route::post('registrar-usuario', [RegisterController::class, 'register'])->name('registrar-usuario');
+Route::get('logs-accesos', [LogsController::class, 'ViewLogsAccesos'])->name('logs-accesos')->middleware(Admin::class);
+Route::get('logs-registros', [LogsController::class, 'ViewLogsRegistros'])->name('logs-registros')->middleware(Admin::class);
+Route::get('clean-accesos', [LogsController::class, 'CleanAccesos'])->name('clean-accesos')->middleware(Admin::class);
+Route::get('clean-registros', [LogsController::class, 'CleanRegistros'])->name('clean-registros')->middleware(Admin::class);

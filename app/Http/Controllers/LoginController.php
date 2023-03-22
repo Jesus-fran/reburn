@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use App\Http\Requests\LoginRequest;
+use App\Models\Accesos;
 
 class LoginController extends Controller
 {
@@ -35,7 +36,15 @@ class LoginController extends Controller
 
     protected function authenticated(Request $request, $user) 
     {
-        if (auth()->user()->name == 'admin') {
+
+        $acceso = new Accesos();
+
+        $acceso->fechahora = now();
+        $acceso->user = $user->username;
+        $acceso->ip = $request->ip();
+        $acceso->save();
+
+        if (auth()->user()->username == 'admin') {
             return redirect()->route('administracion');   
         }
 

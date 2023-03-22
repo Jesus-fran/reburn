@@ -68,7 +68,7 @@
 
                             <div class="col-md-auto offset-md-1 text-light">
                                 <a href="{{ route('contacto') }}" class="nav-link px-2 text-white"> <i
-                                        class="bi bi-person-circle p-2"></i>{{ auth()->user()->name }}</a>
+                                        class="bi bi-person-circle p-2"></i>{{ auth()->user()->username }}</a>
                             </div>
                             <div class="col-md-auto offset-md-1" id="opcion">
                                 <a href="{{ route('cerrar-sesion') }}" class="btn btn-outline-light me-2">Logout</a>
